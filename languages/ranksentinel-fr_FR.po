@@ -1,0 +1,155 @@
+# French translation for RankSentinel.
+# This file is distributed under the same license as the RankSentinel plugin (GPL-2.0-or-later).
+msgid ""
+msgstr ""
+"Project-Id-Version: RankSentinel 0.2.0\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Domain: ranksentinel\n"
+
+msgid "Run a check"
+msgstr "Lancer une analyse"
+
+msgid "OK"
+msgstr "OK"
+
+msgid "To check"
+msgstr "À vérifier"
+
+msgid "Critical"
+msgstr "Critique"
+
+msgid "Not checked"
+msgstr "Non vérifié"
+
+msgid "Quick SEO health check of your site"
+msgstr "Le bilan SEO express de votre site"
+
+msgid "Run a new check"
+msgstr "Relancer l’analyse"
+
+msgid "Run the check"
+msgstr "Lancer l’analyse"
+
+msgid "Check complete. Here are the results."
+msgstr "Analyse terminée. Voici les résultats."
+
+msgid "No check yet"
+msgstr "Aucune analyse pour le moment"
+
+msgid "Run a check to see in a few seconds whether search engines can find and index your site. Nothing is sent to an outside service."
+msgstr "Lancez une analyse pour savoir en quelques secondes si les moteurs de recherche peuvent trouver et indexer votre site. Aucune donnée n’est envoyée à un service extérieur."
+
+#, php-format
+msgid "SEO score: %d out of 100"
+msgstr "Score SEO : %d sur 100"
+
+msgid "Your site is ready for search engines"
+msgstr "Votre site est prêt pour les moteurs de recherche"
+
+msgid "A few points need your attention"
+msgstr "Quelques points méritent votre attention"
+
+msgid "Search engines may not see your site"
+msgstr "Les moteurs de recherche risquent de ne pas voir votre site"
+
+#, php-format
+msgid "Last check: %s"
+msgstr "Dernière analyse : %s"
+
+#, php-format
+msgid "RankSentinel %1$s · free and open-source plugin · %2$s"
+msgstr "RankSentinel %1$s · extension gratuite et open source · %2$s"
+
+msgid "Search engine visibility"
+msgstr "Visibilité pour les moteurs de recherche"
+
+msgid "WordPress asks search engines not to index this site."
+msgstr "WordPress demande aux moteurs de recherche de ne pas indexer ce site."
+
+msgid "Go to Settings → Reading and uncheck “Discourage search engines from indexing this site”."
+msgstr "Allez dans Réglages → Lecture et décochez « Demander aux moteurs de recherche de ne pas indexer ce site »."
+
+msgid "Search engines are allowed to index this site."
+msgstr "Les moteurs de recherche peuvent indexer ce site."
+
+msgid "Homepage response"
+msgstr "Réponse de la page d’accueil"
+
+#, php-format
+msgid "The homepage could not be reached: %s"
+msgstr "Impossible de joindre la page d’accueil : %s"
+
+msgid "Some hosts block requests from a site to itself. Check that the homepage opens normally in a browser."
+msgstr "Certains hébergeurs bloquent les requêtes d’un site vers lui-même. Vérifiez que la page d’accueil s’ouvre normalement dans un navigateur."
+
+#, php-format
+msgid "The homepage answers with HTTP code %d."
+msgstr "La page d’accueil répond avec le code HTTP %d."
+
+msgid "The homepage redirects too many times. Check your redirects and the site address in Settings → General."
+msgstr "La page d’accueil redirige trop de fois. Vérifiez vos redirections et l’adresse du site dans Réglages → Général."
+
+msgid "Visitors and search engines cannot see the homepage. Check your hosting, maintenance mode and security plugins."
+msgstr "Les visiteurs et les moteurs de recherche ne peuvent pas voir la page d’accueil. Vérifiez votre hébergement, le mode maintenance et vos extensions de sécurité."
+
+msgid "Homepage indexing"
+msgstr "Indexation de la page d’accueil"
+
+msgid "Not checked, because the homepage could not be reached."
+msgstr "Non vérifié, car la page d’accueil n’a pas pu être jointe."
+
+msgid "A “noindex” directive was found: search engines are asked not to index the homepage."
+msgstr "Une directive « noindex » a été trouvée : les moteurs de recherche sont priés de ne pas indexer la page d’accueil."
+
+msgid "Check the settings of your SEO plugin for the homepage, and the X-Robots-Tag header of your server."
+msgstr "Vérifiez les réglages de votre extension SEO pour la page d’accueil, ainsi que l’en-tête X-Robots-Tag de votre serveur."
+
+msgid "No “noindex” directive found in the standard robots directives."
+msgstr "Aucune directive « noindex » trouvée dans les balises robots standard."
+
+msgid "XML sitemap"
+msgstr "Plan de site XML (sitemap)"
+
+msgid "Not checked, because the request failed."
+msgstr "Non vérifié, car la requête a échoué."
+
+msgid "The WordPress sitemap is available at /wp-sitemap.xml."
+msgstr "Le plan de site de WordPress est disponible à l’adresse /wp-sitemap.xml."
+
+#, php-format
+msgid "The WordPress sitemap answers with HTTP code %d."
+msgstr "Le plan de site de WordPress répond avec le code HTTP %d."
+
+msgid "If you use Yoast, Rank Math or SEOPress, your sitemap is probably at /sitemap_index.xml: check it in your SEO plugin."
+msgstr "Si vous utilisez Yoast, Rank Math ou SEOPress, votre plan de site se trouve sans doute à l’adresse /sitemap_index.xml : vérifiez-le dans votre extension SEO."
+
+msgid "Lightweight SEO health checks for WordPress: search engine visibility, homepage response, noindex directives and sitemap."
+msgstr "Bilan SEO express pour WordPress : visibilité pour les moteurs de recherche, réponse de la page d’accueil, directives noindex et plan de site."
+
+#, php-format
+msgid "%d OK"
+msgid_plural "%d OK"
+msgstr[0] "%d OK"
+msgstr[1] "%d OK"
+
+#, php-format
+msgid "%d to check"
+msgid_plural "%d to check"
+msgstr[0] "%d à vérifier"
+msgstr[1] "%d à vérifier"
+
+#, php-format
+msgid "%d critical"
+msgid_plural "%d critical"
+msgstr[0] "%d critique"
+msgstr[1] "%d critiques"
+
+#, php-format
+msgid "%d not checked"
+msgid_plural "%d not checked"
+msgstr[0] "%d non vérifié"
+msgstr[1] "%d non vérifiés"
