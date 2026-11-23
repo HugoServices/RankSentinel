@@ -1,44 +1,67 @@
 # RankSentinel
 
-A free, open-source WordPress plugin for quick, manual SEO health checks.
+**Le bilan SEO express de votre site WordPress.** Extension gratuite et open source qui vérifie en quelques secondes que les moteurs de recherche peuvent trouver et indexer votre site.
 
-## Features (v0.1.0)
+*A free, open-source WordPress plugin for quick SEO health checks. Interface in English and French.*
 
-- Checks WordPress search engine visibility setting.
-- Checks homepage HTTP response status.
-- Detects common `noindex` directives on the homepage (HTML robots meta and X-Robots-Tag).
-- Checks availability of the **WordPress core** sitemap at `/wp-sitemap.xml`.
-- Stores and displays the latest manual scan in **Tools → RankSentinel**.
+## Ce que vérifie RankSentinel
 
-No SaaS account, API key or tracking required.
+| Vérification | Ce qui est contrôlé |
+| --- | --- |
+| Visibilité pour les moteurs de recherche | Le réglage WordPress « Demander aux moteurs de recherche de ne pas indexer ce site ». |
+| Réponse de la page d’accueil | Le code HTTP renvoyé par la page d’accueil (200, redirection, erreur). |
+| Indexation de la page d’accueil | Les directives `noindex` dans les balises meta robots et l’en-tête `X-Robots-Tag`. |
+| Plan de site XML | La disponibilité du plan de site de WordPress à l’adresse `/wp-sitemap.xml`. |
+
+Chaque analyse donne un **score sur 100**, le résultat de chaque vérification et, en cas de problème, **un conseil concret** pour le corriger. La dernière analyse reste affichée dans **Outils → RankSentinel**.
+
+Aucun compte, aucune clé d’API, aucun suivi : rien n’est envoyé à un service extérieur.
 
 ## Installation
 
-1. Download this repository as a ZIP.
-2. Upload it through **Plugins → Add New → Upload Plugin** (ensure the ZIP contains the `ranksentinel` directory).
-3. Activate the plugin.
-4. Go to **Tools → RankSentinel** and run a scan.
+1. Téléchargez ce dépôt au format ZIP (bouton **Code → Download ZIP**).
+2. Dans WordPress, allez dans **Extensions → Ajouter → Téléverser une extension** et choisissez le ZIP.
+3. Activez l’extension.
+4. Ouvrez **Outils → RankSentinel** et lancez l’analyse.
 
-## Limitations
+Configuration requise : WordPress 6.5 ou plus récent, PHP 7.4 ou plus récent.
 
-- This is an early MVP, **not** a full site crawler or monitoring service.
-- The `noindex` check detects common directive formats, not every possible HTML variation.
-- The sitemap check uses the WordPress core sitemap; sites using Rank Math, SEOPress, Yoast, etc. may use `/sitemap_index.xml` instead.
-- HTTP requests to the site's own domain may be blocked by hosting configurations.
-- Scans are manual, with no notifications or scheduled monitoring yet.
+## Limites
 
-## Roadmap
+- C’est une première version : ce n’est ni un robot d’exploration complet ni un service de surveillance.
+- La détection de `noindex` couvre les formats courants, pas toutes les variantes HTML possibles.
+- Le plan de site contrôlé est celui de WordPress. Avec Yoast, Rank Math ou SEOPress, il se trouve souvent à `/sitemap_index.xml`.
+- Certains hébergeurs bloquent les requêtes d’un site vers lui-même.
+- Les analyses sont manuelles, sans alerte ni planification pour l’instant.
 
-- Support popular SEO plugin sitemaps.
-- Check selected public URLs and report 404s.
-- Compare page titles and H1s between scans.
-- Scheduled scans and email alerts.
-- Export results as JSON/CSV.
+## Feuille de route
 
-## Contributing
+- Prendre en charge les plans de site des extensions SEO courantes.
+- Vérifier une sélection d’URL publiques et signaler les erreurs 404.
+- Comparer les titres et les H1 d’une analyse à l’autre.
+- Analyses planifiées et alertes par e-mail.
+- Export des résultats en JSON ou CSV.
 
-Issues and pull requests are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
+## Traductions
 
-## License
+L’interface est écrite en anglais et traduite en français (`languages/`). Les contributions pour d’autres langues sont les bienvenues.
 
-GPL-2.0-or-later. See [LICENSE](LICENSE).
+## Contribuer
+
+Les tickets et les demandes de fusion sont les bienvenus. Voir [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Journal des modifications
+
+### 0.2.0
+- Nouvelle interface : score sur 100, cartes de résultats colorées et conseils pour corriger chaque problème.
+- Traduction française complète.
+- Détection de `noindex` étendue aux balises `googlebot`.
+- Nouvel essai en GET quand le serveur refuse les requêtes HEAD pour le plan de site.
+- Lien « Lancer une analyse » dans la liste des extensions.
+
+### 0.1.0
+- Première version.
+
+## Licence
+
+GPL-2.0-or-later. Voir [LICENSE](LICENSE).
